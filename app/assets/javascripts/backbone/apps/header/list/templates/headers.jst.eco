@@ -1,0 +1,9 @@
+<div id="header" class="navbar">
+  <div class="pull-left">
+    <span class="brand">BackboneRails.com Demo</span>
+  </div>
+  <div class="navbar-inner pull-right">
+    <ul class="nav nav-pills">
+    </ul>
+  </div>
+</div>
