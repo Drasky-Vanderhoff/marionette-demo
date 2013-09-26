@@ -13,5 +13,5 @@
 				{ name: "Appointments &", url: "appointments" }
 			]
 	
-	App.reqres.addHandler "header:entities", ->
+	App.reqres.setHandler "header:entities", ->
 		API.getHeaders()

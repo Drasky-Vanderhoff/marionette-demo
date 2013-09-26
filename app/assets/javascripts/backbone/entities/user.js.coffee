@@ -16,8 +16,8 @@
 				success: ->
 					cb users
 	
-	App.reqres.addHandler "set:current:user", (currentUser) ->
+	App.reqres.setHandler "set:current:user", (currentUser) ->
 		API.setCurrentUser currentUser
 	
-	App.reqres.addHandler "user:entities", (cb) ->
+	App.reqres.setHandler "user:entities", (cb) ->
 		API.getUserEntities cb
