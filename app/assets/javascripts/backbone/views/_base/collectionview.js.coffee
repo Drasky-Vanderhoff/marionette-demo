@@ -1,6 +1,4 @@
 @Demo.module "Views", (Views, App, Backbone, Marionette, $, _) ->
-
-  class Views.CollectionView extends Marionette.CollectionView
-    ItemViewEventPrefix: "childview"  
-    
-  
+	
+	class Views.CollectionView extends Marionette.CollectionView
+		itemViewEventPrefix: "childview"

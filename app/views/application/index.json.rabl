@@ -1,7 +1,7 @@
 object false
 
 node do
-  {
-    :enviroment => Rails.env
-  }
-end 
+	{
+		:environment => Rails.env,
+	}
+end

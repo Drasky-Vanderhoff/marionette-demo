@@ -1,9 +1,9 @@
 <table class="table table-striped table-bordered">
-  <thead>
-    <tr>
-      <td>Name</td>
-      <td>Created</td>
-    </tr>
-  </thead>
-  <tbody></tbody>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Created</th>
+		</tr>
+	</thead>
+	<tbody></tbody>
 </table>
