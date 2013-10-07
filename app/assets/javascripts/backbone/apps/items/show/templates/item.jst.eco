@@ -1,0 +1,3 @@
+<a class="pull-left" href="#view/<%= @name %>">
+  <img class="img-responsive" src="<%= @thumbnail %>" alt="lorempixel.com/400/200/">
+</a>

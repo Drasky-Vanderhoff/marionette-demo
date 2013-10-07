@@ -1,0 +1,5 @@
+<div class="media-body">
+  <div class="container">
+    <h3 class="media-heading"><%= @name %> not found!</h3>
+  </div>
+</div>
