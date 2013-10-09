@@ -1,5 +1,5 @@
-<a class="pull-left" href="#view/<%= @name %>">
-  <img class="media-object" src="<%= @thumbnail %>" alt="lorempixel.com/400/200/">
+<a class="container pull-left" href="#view/<%= @name %>">
+  <img class="media-object" data-src="holder.js/192x192" src="<%= @thumbnail %>" style="width: 192px; height: 192px;" alt="<%= @name %>">
 </a>
 <div class="media-body">
   <div class="container">

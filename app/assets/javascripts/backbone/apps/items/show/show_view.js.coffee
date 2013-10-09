@@ -2,7 +2,15 @@
 
   class Show.Item extends App.Views.ItemView
     template: "items/show/templates/item"
-    className: "media"
+    onShow: ->
+      $("#slides").slidesjs
+        play:
+          active: true
+          interval: 4000
+          swap: false
+        pagination:
+          active: false
+          
 
   class Show.NotFound extends App.Views.ItemView
     template: "items/show/templates/notfound"

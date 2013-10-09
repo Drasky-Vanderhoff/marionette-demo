@@ -8,6 +8,7 @@
       layout.on "show", =>
         @showItems items ,layout
       App.mainRegion.show layout
+      App.execute "header:show"
     
     showItems: (items, layout) ->
       itemsView = @getItemsView items

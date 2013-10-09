@@ -4,6 +4,7 @@
 		template: "items/list/templates/list_layout"
 		regions:
 			itemsRegion: "#items-region"
+		className:"container"
 
 	class List.Item extends App.Views.ItemView
 		template: "items/list/templates/_item"

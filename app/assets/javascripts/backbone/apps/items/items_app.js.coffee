@@ -4,7 +4,7 @@
     appRoutes:
       "": "listItems"
       "view/:name": "showItem"
-      "view/:name": "showItem"
+      "edit/:name": "editItem"
   
   API =
     listItems: ->
@@ -12,6 +12,9 @@
   
     showItem: (name) ->
       ItemsApp.Show.Controller.showItem name
+    
+    editItem: (name) ->
+      ItemsApp.Edit.Controller.editItem name
   
   App.addInitializer ->
     new ItemsApp.Router

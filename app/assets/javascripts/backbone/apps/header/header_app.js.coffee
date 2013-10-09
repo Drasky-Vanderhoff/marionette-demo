@@ -5,5 +5,5 @@
     showHeader: ->
       HeaderApp.Show.Controller.showHeader()
 
-  HeaderApp.on "start", ->
+  App.commands.setHandler "header:show", ->
     API.showHeader()

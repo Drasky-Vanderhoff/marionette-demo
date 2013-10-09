@@ -1,3 +1,6 @@
-<a class="pull-left" href="#view/<%= @name %>">
-  <img class="img-responsive" src="<%= @thumbnail %>" alt="lorempixel.com/400/200/">
-</a>
+<div id="slides">
+  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
+  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
+  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
+  <a class="slidesjs-edit slidesjs-navigation" href="#edit/<%= @name %>" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
+</div>

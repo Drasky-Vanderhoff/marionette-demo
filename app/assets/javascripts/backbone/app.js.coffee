@@ -8,9 +8,6 @@
 		headerRegion: "#header-region"
 		mainRegion: "#main-region"
 	
-	App.addInitializer ->
-		App.module("HeaderApp").start()	
-	
 	App.on "initialize:after", (options) ->
 		if Backbone.history
 			Backbone.history.start()
