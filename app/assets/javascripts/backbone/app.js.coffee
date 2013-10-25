@@ -7,6 +7,10 @@
 	App.addRegions
 		headerRegion: "#header-region"
 		mainRegion: "#main-region"
+		modalRegion: "#modal-region"
+
+  App.addInitializer ->
+    App.module("ModalApp").start()
 	
 	App.on "initialize:after", (options) ->
 		if Backbone.history

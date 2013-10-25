@@ -1,6 +1,4 @@
-<div id="slides">
-  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
-  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
-  <img src="<%= @thumbnail %>" alt="<%= @thumbnail %>">
-  <a class="slidesjs-edit slidesjs-navigation" href="#edit/<%= @name %>" title="Edit"><i class="glyphicon glyphicon-pencil"></i></a>
+<div class="md-content">
+  <img src="<%= @thumbnail %>" style="width: 100%; height: 100%" alt="<%= @name %>">
+  <a class="slidesjs-edit slidesjs-navigation" href="#edit/<%= @name %>"><i class="glyphicon glyphicon-pencil"></i></a>
 </div>

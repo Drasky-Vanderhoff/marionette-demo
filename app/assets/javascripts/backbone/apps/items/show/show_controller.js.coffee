@@ -2,12 +2,14 @@
   Show.Controller =
     showItem: (name) ->
       item = App.request "item:get", name
+      view = @getItemView item
       if item?
         App.headerRegion.close()
+        App.execute "load:modal" , view
+        App.execute "pop:modal"
       else
         App.execute "header:show"
-      view = @getItemView item
-      App.mainRegion.show view
+        App.mainRegion.show view
 
     getItemView: (item) ->
       if item?
