@@ -3,17 +3,13 @@
     showItem: (name) ->
       item = App.request "item:get", name
       view = @getItemView item
-      if item?
-        App.headerRegion.close()
-        App.execute "load:modal" , view
-        App.execute "pop:modal"
-      else
-        App.execute "header:show"
-        App.mainRegion.show view
-
+      App.modalRegion.show view
+      
     getItemView: (item) ->
       if item?
         new Show.Item
           model: item
       else
          new Show.NotFound
+      
+    

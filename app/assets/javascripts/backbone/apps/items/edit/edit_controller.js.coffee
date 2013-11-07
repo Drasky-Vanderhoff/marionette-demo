@@ -4,14 +4,12 @@
       item = App.request "item:get", name
       view = @getItemView item
       if item?
-        App.headerRegion.close()
         layout = @getLayoutView()
         layout.on "show", =>
           @showItem item ,layout
-        App.mainRegion.show layout
+        App.modalRegion.show layout
       else
-        App.execute "header:show"
-        App.mainRegion.show item
+        App.modalRegion.show item
 
     getLayoutView: ->
       new Edit.Layout

@@ -1,8 +1,10 @@
-
 <div id="header-region"></div>
 <div id="main-region"></div>
-<div id="modal-region"></div>
-
+<div id="modal" class="modal fade">
+  <div class="modal-dialog">
+    <div id="modal-region" class="modal-content"></div>
+  </div>
+</div>
 <%= javascript_tag do %>
 	$(function() {
 		Demo.start();

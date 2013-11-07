@@ -12,3 +12,10 @@
 
 @import "twitter/bootstrap";
 @import "modal";
+
+.bg {
+  position: fixed; 
+  /* Preserve aspet ratio */
+  width: 100%;
+  min-height: 100%;
+}
