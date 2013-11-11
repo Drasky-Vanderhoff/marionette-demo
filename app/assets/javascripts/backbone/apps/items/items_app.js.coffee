@@ -6,9 +6,7 @@
       "view/:name": "showItem"
       "edit/:name": "editItem"
   
-  # Here there is a code smell, find a better place to put the close modal
   API =
-  
     listItems: ->
       ItemsApp.List.Controller.listItems()
   

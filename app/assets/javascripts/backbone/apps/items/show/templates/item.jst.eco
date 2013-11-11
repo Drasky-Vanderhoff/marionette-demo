@@ -1,2 +1,5 @@
 <img class="bg" src="<%= @thumbnail %>" alt="<%= @name %>">
-<a class="edit-btn" href="#edit/<%= @name %>"><i class="glyphicon glyphicon-pencil"></i></a>
+<div class="floating-buttons">
+  <a rel="edit" href="#edit/<%= @name %>"><i class="glyphicon glyphicon-pencil"></i></a>
+  <a rel="home" href="#"><i class="glyphicon glyphicon-home"></i></a>
+</div>
