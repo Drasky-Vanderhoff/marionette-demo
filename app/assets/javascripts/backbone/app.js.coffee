@@ -7,6 +7,7 @@
     headerRegion: "#header-region"
     mainRegion: "#main-region"
     modalRegion: Marionette.Region.Modal.extend el: "#modal-region"
+    # animateRegion: "#animate-region"
 
   App.addInitializer ->
     App.module("ItemsApp").start()

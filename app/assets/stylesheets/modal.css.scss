@@ -1,14 +1,16 @@
 #modal{
+
   .modal-dialog {
-    width: 98%;
-    height: 98%;
+    width: 96%;
+    height: 96%;
     padding: 0;
-    padding-top: 1%;
-    padding-right: 1%;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
   }
   
   .modal-content {
     height: 100%;
     border-radius: 0;
   }
+
 }
