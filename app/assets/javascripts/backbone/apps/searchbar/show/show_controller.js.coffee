@@ -1,9 +1,11 @@
 @Demo.module "SearchBarApp.Show", (Show, App, Backbone, Marionette, $, _) ->
   
-  Show.Controller =
+  class Show.Controller extends App.Controllers.Base
     
-    showSearchBarView: (region) ->
-      region.show @getSearchBarView()
+    initialize: ->
+      @view = @getSearchBarView()
+
+      @show @view
 
     getSearchBarView: ->
       new Show.SearchBar

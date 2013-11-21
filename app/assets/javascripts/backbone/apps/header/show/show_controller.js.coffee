@@ -1,10 +1,10 @@
 @Demo.module "HeaderApp.Show", (Show, App, Backbone, Marionette, $, _) ->
   
-  Show.Controller =
+  class Show.Controller extends App.Controllers.Base
     
-    showHeader: ->
+    initialize: ->
       headerView = @getHeaderView()
-      App.headerRegion.show headerView
+      @show headerView
       App.execute "show:logo:view", headerView.logoRegion
       App.execute "show:searchbar:view", headerView.searchbarRegion
 

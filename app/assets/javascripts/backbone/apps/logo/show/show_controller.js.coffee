@@ -1,9 +1,11 @@
 @Demo.module "LogoApp.Show", (Show, App, Backbone, Marionette, $, _) ->
   
-  Show.Controller =
+  class Show.Controller extends App.Controllers.Base
     
-    showLogoView: (region) ->
-      region.show @getLogoView()
+    initialize: ->
+      @view = @getLogoView()
+
+      @show @view
 
     getLogoView: ->
       new Show.Logo

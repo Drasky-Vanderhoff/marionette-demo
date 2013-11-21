@@ -3,7 +3,8 @@
   
   API =
     showSearchBarView: (region) ->
-      SearchBarApp.Show.Controller.showSearchBarView region
+      new SearchBarApp.Show.Controller 
+        region: region
 
   App.commands.setHandler "show:searchbar:view", (region) ->
     API.showSearchBarView region

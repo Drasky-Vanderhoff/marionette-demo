@@ -2,9 +2,10 @@
   @startWithParent = true
   
   API =
-    showLogoView: (region) ->
-      LogoApp.Show.Controller.showLogoView region
+    showLogo: (region) ->
+      new LogoApp.Show.Controller 
+        region: region
 
   App.commands.setHandler "show:logo:view", (region) ->
-    API.showLogoView region
+    API.showLogo region
     

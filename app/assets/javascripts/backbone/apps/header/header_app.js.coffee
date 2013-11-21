@@ -3,7 +3,8 @@
   
   API =
     showHeader: ->
-      HeaderApp.Show.Controller.showHeader()
+      new HeaderApp.Show.Controller 
+        region: App.headerRegion
 
   App.commands.setHandler "header:show", ->
     API.showHeader()

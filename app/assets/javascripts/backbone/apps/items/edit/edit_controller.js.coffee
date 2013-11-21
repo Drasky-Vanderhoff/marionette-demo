@@ -6,7 +6,7 @@
       if item?
         layout = @getLayoutView()
         layout.on "show", =>
-          @showItem item ,layout
+          @_showItem item ,layout
         App.modalRegion.show layout
       else
         App.modalRegion.show item
@@ -14,7 +14,7 @@
     getLayoutView: ->
       new Edit.Layout
 
-    showItem: (item, layout) ->
+    _showItem: (item, layout) ->
       itemView = @getItemView item
       layout.mainviewRegion.show itemView
 
