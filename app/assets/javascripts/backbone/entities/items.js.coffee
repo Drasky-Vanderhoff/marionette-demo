@@ -32,8 +32,15 @@
     getItemEntity: (name) ->
       Items.where({ name: name })[0]
 
+    getItemNameByIndex: (index) ->
+      Items.at(index)?.get("name")
+
+
   App.reqres.setHandler "item:entities", ->
     API.getItemEntities()
 
   App.reqres.setHandler "item:get", (name) ->
     API.getItemEntity name
+
+  App.reqres.setHandler "item:get:name", (index) ->
+    API.getItemNameByIndex index
