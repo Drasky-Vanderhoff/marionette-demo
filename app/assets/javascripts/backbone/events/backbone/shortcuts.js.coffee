@@ -1,38 +1,31 @@
 @Demo.module "Events", (Events, App, Backbone, Marionette, $, _) ->
 
   class ShortcutKeys extends Backbone.Shortcuts
+  
     shortcuts:
       "ctrl+h" : "homePage"
       "ctrl+e" : "editCurrentItem"
       "ctrl+s" : "viewCurrentItem"
       "alt+ctrl+pageup" : "prevItem"
       "alt+ctrl+pagedown" : "nextItem"
+    
+    _execEvent: (jseevent, marionette_event) ->
+      jseevent.preventDefault()
+      App.execute marionette_event
+    
     homePage: (e) -> 
-      e.preventDefault()
-      App.navigate "/"
+      @_execEvent e, "event:homePage"
+    
     editCurrentItem: (e) -> 
-      e.preventDefault()
-      App.replaceAndNavigate "view", "edit"
+      @_execEvent e, "event:editCurrentItem"
+    
     viewCurrentItem: (e) ->
-      e.preventDefault()
-      App.replaceAndNavigate "edit", "view"
-    _currentItem: 0
+      @_execEvent e, "event:viewCurrentItem"
+    
     prevItem: (e) ->
-      e.preventDefault()
-      current = App.request "item:get:name", @_currentItem
-      @_currentItem--
-      prev = App.request "item:get:name", @_currentItem
-      if prev?
-        App.replaceAndNavigate current, prev
-      else
-        @_currentItem++
+      @_execEvent e, "event:prevItem"
+    
     nextItem: (e) ->  
-      e.preventDefault()
-      current = App.request "item:get:name", @_currentItem
-      @_currentItem++
-      next = App.request "item:get:name", @_currentItem
-      if next?
-        App.replaceAndNavigate current, next
-      else
-        @_currentItem--
+      @_execEvent e, "event:nextItem"
+  
   shortcuts = new ShortcutKeys
