@@ -1,1 +1,4 @@
-<div id="items-region"></div>
+<div class="row">
+  <div id="thumbs-region" class="col-md-3"></div>
+  <div id="items-region" class="col-md-9"></div>
+</div>

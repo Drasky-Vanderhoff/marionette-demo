@@ -3,8 +3,6 @@
     showItem: (name) ->
       item = App.request "item:get", name
       view = @getItemView item
-      # animation = @getAnimationView item
-      # App.animateRegion.show animation
       App.modalRegion.show view
 
     getItemView: (item) ->
@@ -13,12 +11,4 @@
           model: item
       else
          new Show.NotFound
-
-    # getAnimationView: (item) ->
-    #   if item?
-    #     new Show.AnimateItem
-    #       model: item
-    #   else
-    #      new Show.NotFound
       
-    

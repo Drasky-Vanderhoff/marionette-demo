@@ -18,8 +18,7 @@
 //= require lib/marionette
 //= require lib/keymaster
 //= require lib/backbone.shortcuts
-//= require lib/hammer
-//= require lib/jquery.hammer
+//= require lib/interact
 //= require_tree ./backbone/config
 //= require backbone/app
 //= require_tree ./backbone/events

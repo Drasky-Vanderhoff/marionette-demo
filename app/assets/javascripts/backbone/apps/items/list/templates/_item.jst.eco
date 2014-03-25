@@ -1,13 +1,15 @@
-<a class="container pull-left" href="#view/<%= @name %>">
-  <img class="media-object" data-src="holder.js/192x192" src="<%= @thumbnail %>" style="width: 192px; height: 192px;" alt="<%= @name %>">
-</a>
-<div class="media-body">
-  <div class="container">
-    <h3 class="media-heading"><a href="#view/<%= @name %>"><%= @name %></a></h3>
-    <p><%= @description %></p>
-    <p>
-      <a href="#view/<%= @name %>" class="btn btn-primary"><i class="glyphicon glyphicon-zoom-in"></i> View</a>
-      <a href="#edit/<%= @name %>" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
-    </p>
+<div id="<%= @name %>" style="visibility:hidden;">
+  <a class="container pull-left" href="#view/<%= @name %>">
+    <img class="media-object" data-src="holder.js/192x192" src="<%= @thumbnail %>" style="width: 192px; height: 192px;" alt="<%= @name %>">
+  </a>
+  <div class="media-body">
+    <div class="container">
+      <h3 class="media-heading"><a href="#view/<%= @name %>"><%= @name %></a></h3>
+      <p><%= @description %></p>
+      <p>
+        <a href="#view/<%= @name %>" class="btn btn-primary"><i class="glyphicon glyphicon-zoom-in"></i> View</a>
+        <a href="#edit/<%= @name %>" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+      </p>
+    </div>
   </div>
 </div>
