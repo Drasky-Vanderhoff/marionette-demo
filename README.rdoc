@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo.png)](https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo)
+{<img src="https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo.png" />}[https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo]
 
 Simple Marionette.js + Rails Demo that uses Interact.js and Backbone.shortcuts :
 
