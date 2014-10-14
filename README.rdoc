@@ -1,6 +1,10 @@
 {<img src="https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo.png" />}[https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo]
 
-Simple Marionette.js + Rails Demo that uses Interact.js and Backbone.shortcuts :
+Simple Marionette.js + Rails Demo that uses Interact.js and Backbone.shortcuts
+
+Live Demo : 
+
+http://shielded-mesa-7549.herokuapp.com/
 
 Description :
 
