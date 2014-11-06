@@ -1,12 +1,15 @@
 {<img src="https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo.png" />}[https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo]
 
 Simple Marionette.js + Rails Demo that uses Interact.js and Backbone.shortcuts
+-------
 
-Live Demo : 
+Live Demo 
+-------
 
 http://shielded-mesa-7549.herokuapp.com/
 
-Description :
+Description
+-------
 
 You can drag&drop image on the side, that will make them appear with full description and options ( drag&drop was made using interact.js http://interactjs.io/ ). 
 
