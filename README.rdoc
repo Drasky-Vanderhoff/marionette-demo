@@ -18,3 +18,9 @@ Here you have some of the shortcuts you can perform on the website ( this was ma
       "alt+ctrl+pagedown" : "nextItem"
 
 Let me know if you want me to show you something more complex or related to certain type of feature.
+
+License
+-------
+
+&copy; copyfree 2013 [Alejandro Kondrasky].
+This source code made freely available under an [MIT License](http://www.opensource.org/licenses/mit-license.php).
