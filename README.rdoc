@@ -1,24 +1,20 @@
-Usage
------
+{<img src="https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo.png" />}[https://codeclimate.com/github/Drasky-Vanderhoff/marionette-demo]
 
-Run the app locally:
+Simple Marionette.js + Rails Demo that uses Interact.js and Backbone.shortcuts
 
-1. `gem install bundler`
-2. `bundle install`
-3. `bundle exec rackup`
-4. Visit <http://localhost:9292>
+Live Demo : 
 
-Make something great, then push it to your [Heroku](http://heroku.com) account:
+http://shielded-mesa-7549.herokuapp.com/
 
-1. `gem install heroku`
-2. `heroku login`
-2. `heroku create --stack=cedar mynewapp`
-3. `git push heroku master`
+Description :
 
+You can drag&drop image on the side, that will make them appear with full description and options ( drag&drop was made using interact.js http://interactjs.io/ ). 
 
-License
--------
+Here you have some of the shortcuts you can perform on the website ( this was made using backbone shortcuts library : https://github.com/bry4n/backbone-shortcuts ) : 
+      "ctrl+h" : "homePage"
+      "ctrl+e" : "editCurrentItem"
+      "ctrl+s" : "viewCurrentItem"
+      "alt+ctrl+pageup" : "prevItem"
+      "alt+ctrl+pagedown" : "nextItem"
 
-&copy; copyfree 2013 [Alejandro Kondrasky].
-This source code made freely available under an [MIT License](http://www.opensource.org/licenses/mit-license.php).
-
+Let me know if you want me to show you something more complex or related to certain type of feature.
